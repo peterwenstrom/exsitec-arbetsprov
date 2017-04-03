@@ -1,0 +1,19 @@
+<div class="container">
+  <h3>Här är nuvarande lagersaldo</h3>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Vara</th>
+        <th>Stad</th>
+        <th>Lagersaldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stock of stocks">
+        <td>{{stock.vara}}</td>
+        <td>{{stock.stad}}</td>
+        <td>{{stock.lagersaldo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

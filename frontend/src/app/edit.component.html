@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>Här kan du registera en in- eller utleverans</h3>
+    <div [hidden]="submitted">
+      <form (ngSubmit)="onSubmit()" #editForm="ngForm">
+        <div class="form-group">
+          <label for="vara">Vara</label>
+          <input type="text" class="form-control" id="vara" required
+                 [(ngModel)]="model.vara" name="vara" #name="ngModel">
+        </div>
+        <div class="form-group">
+          <label for="stad">Stad</label>
+          <input type="text" class="form-control" id="stad" required
+                 [(ngModel)]="model.stad" name="stad" #name="ngModel">
+        </div>
+        <div class="form-group">
+          <label for="antal">Antal</label>
+          <input type="number" class="form-control" id="antal" required
+                 [(ngModel)]="model.antal" name="antal" #name="ngModel">
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!editForm.form.valid">Bekräfta</button>
+      </form>
+    </div>
+    <div [hidden]="!submitted">
+      <h4>{{responseMessage}}</h4>
+      <nav>
+        <a (click)="newShipment()">Ännu en leverans</a>
+      </nav>
+    </div>
+</div>
