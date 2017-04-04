@@ -4,10 +4,6 @@ app h1 {
   font-size: 250%;
 }
 
-nav {
-  cursor: pointer;
-}
-
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -15,6 +11,7 @@ nav a {
   display: inline-block;
   background-color: #eee;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 nav a:visited, a:link {

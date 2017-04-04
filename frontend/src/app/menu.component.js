@@ -14,7 +14,7 @@ var MenuComponent = (function () {
 MenuComponent = __decorate([
     core_1.Component({
         selector: 'menu-page',
-        template: '<h3>Choose what you wanna do!</h3>'
+        template: '<h3>Välja vad du vill göra!</h3>'
     })
 ], MenuComponent);
 exports.MenuComponent = MenuComponent;

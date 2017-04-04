@@ -1,6 +1,6 @@
 {
   "name": "paron-ab",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "QuickStart package.json from boilerplate, some unnecessary scripts and dependencies...",
   "scripts": {
     "build": "tsc -p src/",
